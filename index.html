@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Anuj Bose</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ebf36428fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo7.png" width="243" height="107" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Hi, I'm</p>
+                <h1><span>ANUJ</span></h1>
+                <h2>BOSE</h2>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------About Me---------- -->
+   <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pic4.png" width="350" height="500">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am currently pursuing my Full Time Diploma in computer engineering from 
+                    Ambedkar Shakarpur Campus - I and Bachelor's in Computer Applications from 
+                    Indra Gandhi National Open University. I have done my schooling from School 
+                    of Excellence, Khichripur upto class 12. I am a tech enthusiast and my keen 
+                    interest lies in the field of Artificial Intelligence. I am also open to 
+                    other fields related to computer science and technology. I can speak English 
+                    and Hindi fluently. My strengths are that I have good communication skills, 
+                    leadership skills and a creative mindset. I am a learner. My passion is to 
+                    learn new things. I want to learn and grow as I believe that in order to 
+                    grow, one should always keep learning and should never stop.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Tools & Technologies</span><br>1. MySQL<br>2. Assembly Language<br>3. JAVA<br>4. C Programming Language<br>5. HTML<br>6. Python<br>7. CSS<br>8. JavaScript</li>
+                            <li><span>Industry Knowledge</span><br>1. Dicrete Mathematics<br>2. Applied Physics<br>3. Applied Mathematics<br>4. Presentations</li>
+                            <li><span>Interpersonal Skills</span><br>1. Leadership<br>2. Problem Solving<br>3. Communication</li>
+                            <li><span>Languages</span><br>1. English<br>2. Hindi<br>3. Bengali</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <p>
+                            Currently, I am a student and pursuing my Bachelors in Computer
+                            Applications from Indira Gandhi Open University(IGNOU) and Diploma in 
+                            Computer Engineering. Also I am currently doing an internship at 
+                            Ignite Interns.
+                        </p>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-present</span><br>Diploma in Computer Engineering from DSEU</li>
+                            <li><span>2023-present</span><br>Bachelors in Computer Applications from IGNOU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   <!-- -----------Portfolio---------- -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="w3.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>
+                        The app helps you to connect with other people around the world.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="w2.jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>
+                        The app allows you to listen to various songs and podcasts. 
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="w1.jpg">
+                <div class="layer">
+                    <h3>Cryptocurrency App</h3>
+                    <p>
+                        The app allows you to collect and use cryptocurrency to buy goods and
+                        services.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+   </div>
+
+   <!-- ----------Contact---------- -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> anujbose01011945@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 9311767315</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Anuj Bose RESUME.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © AnujBose Made with <i class="fa-solid fa-heart"></i> by Anuj Bose</p>
+    </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
